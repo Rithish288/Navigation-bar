@@ -1,0 +1,43 @@
+body{
+    font-family:'Quicksand', sans-serif;
+    font-size: 150%;
+    color: cornsilk;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 10vw;
+    margin-top: -3%;
+    cursor: pointer;
+}
+
+.material-icons{
+    color:white;
+    font-size: 100px;
+}
+
+#top-nav{
+    background-color: #00008b;
+    padding: 0.1em;
+    display: flex;
+    justify-content: space-between;
+    height: 14vh;
+}
+
+#top-nav #mainMenu{
+    list-style: none;
+    display: flex;
+}
+
+.m-item{
+    display: inherit;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 2em;
+}
+
+#subMenu{
+    display: none;
+    list-style: none;
+}
