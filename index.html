@@ -1,33 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"/>
     <title>Navgation bar</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="top-nav">
-        <img src="myLogo.png" alt="logo">
-        <ul id="mainMenu">
-            <li class="m-item">Home</li>
-            <li class="m-item">Instruments <span class="material-icons">arrow_drop_down</span></li>
-            <li class="m-item">
-                Genre <span class="material-icons">arrow_drop_down</span>
-                <ul id="subMenu">
-                    <li class="s-item">Classical</li>
-                    <li class="s-item">Bollywood</li>
-                    <li class="s-item">Jazz</li>
-                    <li class="s-item">Rock</li>
-                    <li class="s-item">Metal</li>
-                </ul>
-            </li>
-            <li class="m-item">About</li>
-            <li class="m-item">Contact</li>
-        </ul>
+      <img src="myLogo.png" alt="logo" />
+      <ul id="t-mainMenu">
+        <li class="m-item" id="home">Home</li>
+        <li class="m-item" id="instruments">
+          Instruments <i class="material-icons">arrow_drop_down</i>
+          <ul id="i-Menu" class="subMenu">
+            <li class="s-item">Piano</li>
+            <li class="s-item">Violin</li>
+            <li class="s-item">Flute</li>
+            <li class="s-item">Drums</li>
+            <li class="s-item">Trumpet</li>
+          </ul>
+        </li>
+        <li class="m-item" id="genre">
+          Genre <i class="material-icons">arrow_drop_down</i>
+          <ul id="g-Menu" class="subMenu">
+            <li class="s-item">Classical</li>
+            <li class="s-item">Bollywood</li>
+            <li class="s-item">Jazz</li>
+            <li class="s-item">Rock</li>
+            <li class="s-item">Metal</li>
+          </ul>
+        </li>
+        <li class="m-item" id="about">About</li>
+        <li class="m-item" id="contact">Contact</li>
+      </ul>
     </div>
-    <div id="side-nav"></div>
-</body>
+
+
+
+    <div id="side-nav">
+        <button id="toggle" class="material-icons" onclick="toggleMenu()">menu</button>
+        <ul id="s-mainMenu">
+            <li class="m-item" id="home"><i class="material-icons">home</i>Home</li>
+            <li class="m-item" id="method">
+              <i class="material-icons">piano</i>
+              Instruments <i class="material-icons">navigate_next</i>
+              <ul id="j-Menu" class="dropDown">
+                <li class="s-item">Piano</li>
+                <li class="s-item">Violin</li>
+                <li class="s-item">Flute</li>
+                <li class="s-item">Drums</li>
+                <li class="s-item">Trumpet</li>
+              </ul>
+            </li>
+            <li class="m-item" id="type">
+              <i class="material-icons">album</i>
+              Genre <i class="material-icons">navigate_next</i>
+              <ul id="h-Menu" class="dropDown">
+                <li class="s-item">Classical</li>
+                <li class="s-item">Bollywood</li>
+                <li class="s-item">Jazz</li>
+                <li class="s-item">Rock</li>
+                <li class="s-item">Metal</li>
+              </ul>
+            </li>
+            <li class="m-item" id="about"><i class="material-icons">perm_identity</i>About</li>
+            <li class="m-item" id="contact"><i class="material-icons">call</i>Contact</li>
+          </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -4,28 +4,31 @@ body{
     color: cornsilk;
     padding: 0;
     margin: 0;
+    
+    background-color: black;
 }
 
 img{
-    width: 10vw;
-    margin-top: -3%;
+    width: 11vw;
+    margin-top: -2.3%;
+    margin-bottom: 1%;
     cursor: pointer;
+    height: 11vw;
+    background-color: transparent;
 }
 
 .material-icons{
     color:white;
-    font-size: 100px;
 }
 
 #top-nav{
     background-color: #00008b;
-    padding: 0.1em;
     display: flex;
     justify-content: space-between;
-    height: 14vh;
+    height: 120px;
 }
 
-#top-nav #mainMenu{
+#top-nav #t-mainMenu{
     list-style: none;
     display: flex;
 }
@@ -34,10 +37,58 @@ img{
     display: inherit;
     align-items: center;
     cursor: pointer;
-    margin-right: 2em;
+    padding: 1em;
 }
 
-#subMenu{
-    display: none;
+li.s-item{
+    margin: 0.5em 1em 0.5em -20%;
+}
+
+.subMenu{
+    background-color:darkblue;
+    top: 13vh;
+    overflow: visible;
+    position: absolute;
     list-style: none;
+    display: none;
+}
+
+li:hover{
+    background-color:#0000b3
+}
+
+#s-mainMenu{
+    display: flex;
+    flex-direction: column;
+    background-color: darkblue;
+    margin-top: 1em;
+    max-width: 250px;
+    padding-inline-start: 0;
+    overflow: hidden;
+}
+
+.open{width: 3em}
+
+button{
+    background-color: orange;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 40px;
+    margin: 2% 0 0 1% ;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#side-nav li .material-icons:first-of-type{
+    margin-right: 1em;
+}
+
+
+.dropDown{
+    background-color:darkblue;
+    position: absolute;
+    left: 250px;
+    list-style: none;
+    display: none;
 }
