@@ -6,72 +6,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <title>Navigation bar</title>
   </head>
   <body>
-    <div id="top-nav">
-      <img src="myLogo.png" alt="logo" />
-      <ul id="t-mainMenu">
-        <li class="m-item" id="home">Home</li>
-        <li class="m-item" id="instruments">
-          Instruments <i class="material-icons">arrow_drop_down</i>
-          <ul id="i-Menu" class="subMenu">
-            <li class="s-item">Piano</li>
-            <li class="s-item">Violin</li>
-            <li class="s-item">Flute</li>
-            <li class="s-item">Drums</li>
-            <li class="s-item">Trumpet</li>
+    <nav id="topNav">
+      <button><i class="material-icons">menu</i></button>
+      <h1> <i class="material-icons">music_note</i> Music <i class="material-icons">music_note</i></h1>
+      <ul id="topNav-list">
+        <li class="list-item">Home</li>
+        <li class="list-item">Instruments<i class="material-icons">arrow_drop_down</i>
+          <ul class="nested">
+            <li>Piano</li>
+            <li>Guitar</li>
+            <li>Violin</li>
+            <li>Flute</li>
+            <li>Trupmet</li>
           </ul>
         </li>
-        <li class="m-item" id="genre">
-          Genre <i class="material-icons">arrow_drop_down</i>
-          <ul id="g-Menu" class="subMenu">
-            <li class="s-item">Classical</li>
-            <li class="s-item">Bollywood</li>
-            <li class="s-item">Jazz</li>
-            <li class="s-item">Rock</li>
-            <li class="s-item">Metal</li>
+        <li class="list-item">Genre<i class="material-icons">arrow_drop_down</i>
+          <ul class="nested">
+            <li>Bollywood</li>
+            <li>Classical</li>
+            <li>Jazz</li>
+            <li>Rock</li>
+            <li>Carnatic</li>
           </ul>
         </li>
-        <li class="m-item" id="about">About</li>
-        <li class="m-item" id="contact">Contact</li>
+        <li class="list-item">About</li>
+        <li class="list-item">Contact</li>
       </ul>
-    </div>
-
-
-
-    <div id="side-nav">
-        <button id="toggle" class="material-icons" onclick="toggleMenu()">menu</button>
-        <ul id="s-mainMenu">
-            <li class="m-item" id="home"><i class="material-icons">home</i>Home</li>
-            <li class="m-item" id="method">
-              <i class="material-icons">piano</i>
-              Instruments <i class="material-icons">navigate_next</i>
-              <ul id="j-Menu" class="dropDown">
-                <li class="s-item">Piano</li>
-                <li class="s-item">Violin</li>
-                <li class="s-item">Flute</li>
-                <li class="s-item">Drums</li>
-                <li class="s-item">Trumpet</li>
-              </ul>
-            </li>
-            <li class="m-item" id="type">
-              <i class="material-icons">album</i>
-              Genre <i class="material-icons">navigate_next</i>
-              <ul id="h-Menu" class="dropDown">
-                <li class="s-item">Classical</li>
-                <li class="s-item">Bollywood</li>
-                <li class="s-item">Jazz</li>
-                <li class="s-item">Rock</li>
-                <li class="s-item">Metal</li>
-              </ul>
-            </li>
-            <li class="m-item" id="about"><i class="material-icons">perm_identity</i>About</li>
-            <li class="m-item" id="contact"><i class="material-icons">call</i>Contact</li>
-          </ul>
-    </div>
-    <p>There are no links in this website. So don't go clicking all the options in the top-navigation and the side-navigation!
-    Your cursor just changes to a pointer when you move it over the item.</p>
+    </nav>
     <script src="script.js"></script>
   </body>
 </html>
