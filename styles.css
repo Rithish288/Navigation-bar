@@ -4,11 +4,12 @@ body{
     color: cornsilk;
     padding: 0;
     margin: 0;
+    overflow: hidden;
     
     background-color: black;
 }
 
-button{
+#menu{
     display: none;
     color: white;
     background-color: black;
@@ -23,18 +24,15 @@ h1 {
     font-family: 'Dancing Script', cursive;
     border: 1px solid rgb(189, 189, 189);
     padding: 0.3em 0.7em;
-    margin:0;
-    margin-left: 1em;
+    margin:0 0 0 1em;
 }
 
-ul{
-    list-style-type: none;
-    margin: 0;
-}
+
 
 li{
     padding: 0.5em 1em;
     margin:0;
+    display: inline-block;
     cursor: pointer;
 }
 
@@ -43,80 +41,86 @@ li{
     background-color: rgb(14, 20, 73);
     min-height: 12vh;
     max-height: 13vh;
-    overflow-y: hidden;
-    overflow-x: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
     font-size: 1em;
 }
 
 #topNav #topNav-list {
-    display: flex;
+    list-style-type: none;
+    margin: 0;
 }
 
 #topNav #topNav-list .nested {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    background-color: rgb(14, 20, 73);
     position: absolute;
-    margin:0;
     padding: 0;
+    transition: all 0.3s ease;
+}
+
+.nested li{
+    display: block;
+}
+
+.rotate{
+    transition: all 0.3s ease
+}
+.down{
+    transform: rotate(180deg);
 }
 
 
-
-
-
-
-
-
+/* 
 @media only screen and (max-width: 4000px){
-    button i.material-icons{
+    #menu i.material-icons{
         display: none;
-     }                            /***** On large laptop screens *****/
-    button{
+     }                            
+    #menu{
         display: none;
     }
 }
 
-            /***** On a very small laptop or tablets or ipads *****/
 @media only screen and (max-width: 978px) {
-    #topNav #topNav-list {
+    #topNav-list {
       background-color: green;
       transform: translateX(100%);
+      left: auto;
       position: absolute;
       height: 50vh;
       align-self: flex-start;
-      right: 0;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
     }
     
-    button:active #topNav #topNav-list{
-        transform: translateX(0);
+    button#menu:hover h1{
+        transform: translateX(-100%);
+        right: 100;
+        position:absolute;
+        background-color: black;
     }
 
     #topNav{
         display: flex;
         justify-content: space-between;
         max-width: 100vw;
-        overflow-x: hidden;
     }
-    button i.material-icons{
+    #menu i.material-icons{
         display: block;
     }
-    button{
+    #menu{
         display: block;
     }
-  }
+}
 
-  /***** On mobile phone screens *****/
   @media only screen and (max-width: 400px) {
-    button i.material-icons{
+    #menu i.material-icons{
         display: block;
     }
-    button{
+    #menu{
         display: block;
         margin-right: 2em;
         transform: scale(1.5);
@@ -128,4 +132,4 @@ li{
     #topNav{
         min-height: 8vh;
     }
-  }
+  } */

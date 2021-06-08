@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="events.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"/>
@@ -15,8 +16,8 @@
       <h1> <i class="material-icons">music_note</i> Music <i class="material-icons">music_note</i></h1>
       <ul id="topNav-list">
         <li class="list-item">Home</li>
-        <li class="list-item">Instruments<i class="material-icons">arrow_drop_down</i>
-          <ul class="nested">
+        <li class="list-item" data-accordion>Instruments<i class="material-icons">arrow_drop_down</i>
+          <ul class="nested change">
             <li>Piano</li>
             <li>Guitar</li>
             <li>Violin</li>
@@ -24,8 +25,8 @@
             <li>Trupmet</li>
           </ul>
         </li>
-        <li class="list-item">Genre<i class="material-icons">arrow_drop_down</i>
-          <ul class="nested">
+        <li class="list-item" data-accordion>Genre<i class="material-icons">arrow_drop_down</i>
+          <ul class="nested change">
             <li>Bollywood</li>
             <li>Classical</li>
             <li>Jazz</li>
@@ -36,7 +37,7 @@
         <li class="list-item">About</li>
         <li class="list-item">Contact</li>
       </ul>
-      <button><i class="material-icons">menu</i></button>
+      <button id="menu"><i class="material-icons">menu</i></button>
     </nav>
     <script src="script.js"></script>
   </body>
