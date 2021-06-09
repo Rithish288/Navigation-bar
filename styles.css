@@ -119,6 +119,11 @@ li{
     }
 }
 
+@media only screen and (orientation: portrait) {
+    #topNav{
+        height: 10vh;
+    }
+}
 
 
 /* Different events that are controlled in javascript */
