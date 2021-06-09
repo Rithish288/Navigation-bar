@@ -111,10 +111,6 @@ li{
         max-height: 0;
     }
 
-    .animate.out{
-        transform: translateX(100%);
-    }
-
     #menu i.material-icons{
         display: block;
     }
@@ -138,21 +134,15 @@ li{
 .animate.down{
     transform: rotate(180deg);
 }
-
+.animate.out{
+    transform: translateX(100%);
+}
 .remove{
     display:none
 }
 
-/*
-  @media only screen and (max-width: 400px) {
-    #menu i.material-icons{
-        display: block;
-    }
-    #menu{
-        display: block;
-        margin-right: 2em;
-        transform: scale(1.5);
-    }
+
+  @media only screen and (max-width: 500px) {
     h1{
         transform: scale(0.8);
         margin-left: 0;
@@ -160,4 +150,4 @@ li{
     #topNav{
         min-height: 8vh;
     }
-  } */
+  }
