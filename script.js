@@ -27,7 +27,7 @@ function active() {
     })
 }
 
-active()
+
 
 
 function mediaQuery() {
@@ -36,8 +36,5 @@ function mediaQuery() {
     }
 }
 
+active()
 mediaQuery()
-
-
-
-
