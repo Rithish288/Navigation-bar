@@ -120,7 +120,7 @@ li{
 
 @media only screen and (orientation: portrait) {
     #topNav{
-        height: 10vh;
+        min-height: 10vh;
     }
 }
 
