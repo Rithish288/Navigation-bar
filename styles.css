@@ -6,7 +6,6 @@ body{
     margin: 0;
     background-color: black;
     overflow-x: hidden;
-    overflow-y: auto
 }
 
 #menu{
@@ -85,12 +84,11 @@ li{
     #topNav-list {
       align-self: start;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
+      display: block;
       overflow-y: scroll;
-      justify-content: start;
       transition: all 0.3s ease;
-      position: fixed;
+      position: absolute;
+      margin-right: 100px;
       top: 10vh;
       right: 0;   
     }
@@ -128,6 +126,9 @@ li{
     h1{
         transform: scale(0.8);
         margin-left: 0;
+    }
+    #menu{
+        margin-right: 2em;
     }
   }
 
