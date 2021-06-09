@@ -51,7 +51,8 @@ li{
 #topNav #topNav-list {
     list-style-type: none;
     margin: 0;
-    background-color: rgb(14, 20, 73)
+    background-color: rgb(14, 20, 73);
+    overflow-y: auto;
 }
 
 #topNav #topNav-list .nested {
