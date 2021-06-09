@@ -37,14 +37,7 @@ function mediaQuery() {
 }
 
 mediaQuery()
-// for (let i = 0; i < accordion.length; i++) {
-//     accordion[i].addEventListener("click", () => {
-//         for (let i = 0; i < nested.length; i++) {
-//             nested[i].classList.toggle("change")
-//         }
-//     })
-    
-// }
+
 
 
 

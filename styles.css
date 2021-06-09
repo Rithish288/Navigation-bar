@@ -103,7 +103,6 @@ li{
         display: flex;
         justify-content: space-between;
         max-width: 100vw;
-        font-size:0.8em;
     }
 
     #topNav #topNav-list .nested{
@@ -119,6 +118,11 @@ li{
     }
 }
 
+@media only screen and (orientation: portrait) {
+    #topNav{
+        height: 10vh;
+    }
+}
 
 
 /* Different events that are controlled in javascript */
