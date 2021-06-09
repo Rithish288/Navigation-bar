@@ -31,7 +31,7 @@ active()
 
 
 function mediaQuery() {
-    if(window.innerWidth <= 990) {
+    if(window.innerWidth < 990) {
         navigation.classList.add('out')
     }
 }
