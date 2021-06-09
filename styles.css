@@ -2,10 +2,32 @@ body{
     font-family:'Quicksand', sans-serif;
     font-size: 24px;
     color: cornsilk;
+    max-width: 100vw;
     padding: 0;
     margin: 0;
-    background-color: black;
     overflow-x: hidden;
+}
+
+#toggle-theme{
+    display: block;
+    width: 1.5em;
+    height: 15px;
+    border-radius: 100vw;
+    background-color: black;
+    margin: 0.5em;
+    cursor: pointer;
+    overflow: visible;
+}
+
+#toggle-theme .circle{
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    background-color: grey;
+    z-index: 2;
+    position: absolute;
+    margin-top: -2px;
+    margin-left: -3px;
 }
 
 #menu{
@@ -86,7 +108,6 @@ li{
       min-height: 100vh;
       display: block;
       overflow-y: scroll;
-      transition: all 0.3s ease;
       position: absolute;
       margin-right: 100px;
       top: 10vh;
@@ -122,7 +143,7 @@ li{
     }
 }
 
-  @media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
     h1{
         transform: scale(0.8);
         margin-left: 0;
@@ -130,7 +151,7 @@ li{
     #menu{
         margin-right: 2em;
     }
-  }
+}
 
   
 /* Different events that are controlled in javascript */
@@ -146,4 +167,10 @@ li{
 }
 .remove{
     display:none
+}
+.color{
+    background-color:green;
+}
+.move{
+    transform: translateX(100%);
 }

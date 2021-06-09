@@ -18,6 +18,7 @@ for (let i = 0; i < accordion.length; i++) {
     })
 }
 
+//Event listeners
 const navigation = document.getElementById('topNav-list');
 
 function active() {
@@ -28,13 +29,23 @@ function active() {
 }
 
 
+function toggleTheme() {
+    const toggleBtn = document.getElementById('toggle-theme');
+    const circle = document.querySelector('.circle');
+    circle.classList.add('animate')
+    toggleBtn.addEventListener("click", () => {
+        toggleBtn.classList.toggle('color')
+        circle.classList.toggle('move')
+    })
+}
 
-
+//Responsiveness
 function mediaQuery() {
     if(window.innerWidth < 990) {
         navigation.classList.add('out')
     }
 }
 
+toggleTheme()
 active()
 mediaQuery()
