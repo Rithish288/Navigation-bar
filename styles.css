@@ -6,6 +6,7 @@ body{
     margin: 0;
     background-color: black;
     overflow-x: hidden;
+    overflow-y: auto
 }
 
 #menu{
@@ -19,14 +20,13 @@ body{
     cursor: pointer;
     margin-right: 4em;
 }
+
 h1 {
     font-family: 'Dancing Script', cursive;
     border: 1px solid rgb(189, 189, 189);
     padding: 0.1em 0.3em;
     margin:0 0 0 1em;
 }
-
-
 
 li{
     padding: 0.5em 1em;
@@ -64,8 +64,6 @@ li{
     transition: all 0.3s ease;
 }
 
-
-
 .nested li{
     display: block;
 }
@@ -89,6 +87,7 @@ li{
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      overflow-y: scroll;
       justify-content: start;
       transition: all 0.3s ease;
       position: fixed;
@@ -125,7 +124,14 @@ li{
     }
 }
 
+  @media only screen and (max-width: 500px) {
+    h1{
+        transform: scale(0.8);
+        margin-left: 0;
+    }
+  }
 
+  
 /* Different events that are controlled in javascript */
 
 .animate{
@@ -140,14 +146,3 @@ li{
 .remove{
     display:none
 }
-
-
-  @media only screen and (max-width: 500px) {
-    h1{
-        transform: scale(0.8);
-        margin-left: 0;
-    }
-    #topNav{
-        min-height: 8vh;
-    }
-  }
